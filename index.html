@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Simple Story Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2d2f36;
+            color: #f0f0f0;
+            margin: 0;
+        }
+        h1 {
+            color: #f8d210;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #f8d210;
+            color: #2d2f36;
+            padding: 15px 25px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ffac1d;
+        }
+        #story {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 600px;
+            display: none;
+            border: 1px solid #f8d210;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click to Read a Super Cool Story!</h1>
+    <button onclick="showStory()">Read the Story</button>
+
+    <div id="story">
+        <p>Once upon a time, there was a curious cat named Whiskers who loved adventure. One night, as the stars twinkled above, Whiskers climbed to the top of a tall tree and saw the entire town asleep below. But just as he was about to jump down, he spotted a tiny glowing light on the horizon. Whiskers knew he had to follow it! Little did he know, that light was the start of an adventure he’d never forget.</p>
+    </div>
+
+    <script>
+        function showStory() {
+            const storyDiv = document.getElementById("story");
+            storyDiv.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
